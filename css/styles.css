@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: all .3s ease-in-out 
+}
+
+.bgc {
+    background: url(../img/main.jpg) 0 0/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cross {
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    background: url(../img/nike-bgc.jpg) 0 0/cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cross__logo {
+    padding: 20px;
+}
+
+.cross__select {
+
+}
+
+.cross__img {
+    padding: 50px 35px;
+}

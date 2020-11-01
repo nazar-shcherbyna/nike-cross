@@ -56,6 +56,10 @@ html {
     opacity: 0;
 }
 
+.slide img {
+    max-width: 340px;
+}
+
 #slide-1:checked ~ .slides .slide {
     transform: translate(0, 0);
 } 

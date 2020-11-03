@@ -69,7 +69,7 @@ html {
 }
 
 #slide-3:checked ~ .slides .slide {
-    transform: translate(-200%, 0);
+    transform: translate(-200%, 0); 
 } 
 
 #slide-1:checked ~ .slides [data-slide="1"],

@@ -1,0 +1,45 @@
+.star-rating {
+    margin: 25px 0;
+    display: flex;
+    transform: rotateY(180deg);
+    max-width: 75px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    display: block;
+    cursor: pointer;
+    width: 15px;
+}
+
+.star-rating label::before {
+    content: '\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #9da1a6;
+}
+
+.star-rating label::after {
+    content: '\f005';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 15px;
+    top: 0; 
+    opacity: 0;
+    display: block;
+    color: #f7bf16;
+    transition: .15s;
+}
+
+.star-rating label:hover::after,
+.star-rating label:hover ~ label::after,
+.star-rating input:checked ~ label::after {
+    opacity: 1;
+}
